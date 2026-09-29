@@ -1,0 +1,196 @@
+.page {
+  min-height: 100vh;
+  background: #f7f8fa;
+  padding: 24px 16px;
+}
+
+.content {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 7px;
+  font-size: 1.3rem;
+}
+
+.backLink:hover {
+  background: #eceff1;
+}
+
+.title {
+  font-size: 1.65rem;
+  line-height: 1.2;
+  color: #202124;
+}
+
+.subtitle {
+  margin-top: 5px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.summary {
+  padding: 20px 18px;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.summaryRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 44px;
+}
+
+.divider {
+  height: 1px;
+  margin: 10px 0;
+  background: #e5e7eb;
+}
+
+.total {
+  color: #009b95;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+  border: 0;
+}
+
+.payment legend {
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.paymentOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #dfe3e6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.paymentOption:has(input:checked) {
+  border-color: #009b95;
+  background: #f0fbfa;
+}
+
+.paymentOption div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.paymentOption span {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.paymentOption input {
+  width: 18px;
+  height: 18px;
+  accent-color: #009b95;
+}
+
+.confirmButton {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 28px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 7px;
+  background: #009b95;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.confirmButton:hover {
+  background: #008b85;
+}
+
+.confirmButton:focus-visible,
+.backLink:focus-visible {
+  outline: 3px solid rgba(0, 155, 149, 0.3);
+  outline-offset: 2px;
+}
+
+.confirmButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.errorMessage {
+  margin-top: 20px;
+  padding: 12px 14px;
+  border-radius: 7px;
+  background: #fff1f1;
+  color: #b42318;
+  font-size: 0.9rem;
+}
+
+.success {
+  padding: 32px 20px;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.success p {
+  margin-top: 10px;
+  color: #6b7280;
+}
+
+.returnButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  margin-top: 24px;
+  padding: 12px 18px;
+  border-radius: 7px;
+  background: #009b95;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: 48px 32px;
+  }
+
+  .content {
+    max-width: 520px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
