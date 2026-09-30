@@ -23,20 +23,29 @@ export function Sidebar() {
       <nav className={styles.nav} aria-label="Navegação principal">
         <Link
           href="/"
-          className={`${styles.link} ${isOffersActive ? styles.active : ""}`}
+          className={`${styles.menuItem} ${styles.link} ${isOffersActive ? styles.active : ""}`}
           aria-current={isOffersActive ? "page" : undefined}
         >
           Ofertas
         </Link>
         <Link
           href="/cart"
-          className={`${styles.link} ${isCartActive ? styles.active : ""}`}
+          className={`${styles.menuItem} ${styles.link} ${isCartActive ? styles.active : ""}`}
           aria-current={isCartActive ? "page" : undefined}
         >
           Carrinho
           {cartCount > 0 && <span className={styles.badge}>{cartCount}</span>}
         </Link>
+
+        <span className={`${styles.menuItem} ${styles.disabled}`}>
+          Histórico
+        </span>
+
+        <span className={`${styles.menuItem} ${styles.disabled}`}>Perfil</span>
       </nav>
+      <footer className={styles.footer}>
+        <span className={`${styles.menuItem} ${styles.disabled}`}>Sair</span>
+      </footer>
     </aside>
   );
 }

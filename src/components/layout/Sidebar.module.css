@@ -1,5 +1,7 @@
 .sidebar {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .brand {
@@ -23,28 +25,36 @@
   font-size: 0.8rem;
 }
 
-.nav{
+.nav {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  flex: 1;
   margin: 5px 10px 10px;
 }
 
-.link {
+.menuItem {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  color: #009b95;
   font-size: 0.9rem;
   margin-bottom: 8px;
   padding: 12px 16px;
   border-radius: 8px;
+}
+
+.link {
+  color: #009b95;
   text-decoration: none;
 }
 
 .link:hover {
   background-color: #f0f9f8;
+}
+
+.disabled {
+  color: #9ca3af;
+  cursor: default;
 }
 
 .link:focus-visible {
@@ -71,4 +81,8 @@
   color: #fff;
   font-size: 0.75rem;
   font-weight: 700;
+}
+
+.footer {
+  margin: 0 10px 24px;
 }
