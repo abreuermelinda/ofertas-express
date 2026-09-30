@@ -188,9 +188,14 @@
 
   .content {
     max-width: 520px;
+    margin: 0;
   }
 
   .title {
     font-size: 2rem;
+  }
+
+  .backLink {
+    display: none;
   }
 }
