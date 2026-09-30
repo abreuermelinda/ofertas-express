@@ -12,12 +12,12 @@ export const handlers = [
     checkoutV2: true,
   });
 }),
-/* http.get("/api/feature-flag", () => {
-  return HttpResponse.json(
-    { message: "Erro ao carregar feature flag" },
-    { status: 500 }
-  );
-}) */
+// http.get("/api/feature-flag", () => {
+//   return HttpResponse.json(
+//     { message: "Erro ao carregar feature flag" },
+//     { status: 500 }
+//   );
+// }),
 /* http.post("/api/checkout", async ({ request }) => {
   const body = (await request.json()) as {
     offerIds: string[];
