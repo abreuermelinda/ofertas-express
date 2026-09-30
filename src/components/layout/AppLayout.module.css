@@ -1,0 +1,22 @@
+.content {  
+  width: 100%;  
+}
+
+.sidebar {
+   display: none;
+}
+
+.main {
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .content {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+  }
+
+  .sidebar {
+   display: block;
+  }
+}
